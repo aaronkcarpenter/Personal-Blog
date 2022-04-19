@@ -9,6 +9,24 @@ CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=gh-pages
+S3_BUCKET=aaronkyle.co
+AWS_ACCESS_KEY_ID=AKIAYONHTUPR5QZWGJJL
+# Uploading Files to S3
+deploy:
+ifdef AWS_ACCESS_KEY_ID
+	aws --version
+
+	# Force text/html for HTML because we're not using an extension.
+	aws s3 sync s3://$(aaronkyle.co)/ \
+        --acl public-read --delete --content-type text/html --exclude 'assets*'
+
+	# Then move on to assets and allow S3 to detect content type.
+	aws s3 sync ./public/assets/images/ s3://$(aaronkyle.co)/assets/images/ \
+        --acl public-read --delete --follow-symlinks
+else
+	# No AWS access key. Skipping deploy.
+endif
+
 
 
 DEBUG ?= 0
@@ -33,6 +51,8 @@ help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
+	@echo '   make s3_send                       upload the website via S3         '
+	@echo '   make s3_upload                       upload the website via S3         '
 	@echo '   make html                           (re)generate the web site          '
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
@@ -46,6 +66,17 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
+
+s3_upload:
+	$(OUTPUTDIR)/ s3://$(S3_BUCKET) --profile --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+
+s3_send:
+	aws s3 sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl public-read --delete
+
+# s3cmd put * s3://pythonforundergradengineers/ --acl-public --recursive
+
+# s3_upload:
+# 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
 html:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
