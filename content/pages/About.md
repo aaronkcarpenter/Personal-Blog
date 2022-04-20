@@ -1,7 +1,8 @@
 Title: About
 Date: 2022-04-13 20:36
 Modified: 2022-04-13 20:36
-Slug: About
+Slug: about-me
+status: hidden
 Author: Aaron Kyle
 Summary: All About Aaron!
 

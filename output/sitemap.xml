@@ -5,50 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2022-04-17T23:41:02-00:00</lastmod>
+<lastmod>2022-04-19T23:25:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2022-04-17T23:41:02-00:00</lastmod>
+<lastmod>2022-04-19T23:25:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2022-04-17T23:41:02-00:00</lastmod>
+<lastmod>2022-04-19T23:25:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2022-04-17T23:41:02-00:00</lastmod>
+<lastmod>2022-04-19T23:25:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/search.html</loc>
-<lastmod>2022-04-17T23:41:02-00:00</lastmod>
+<lastmod>2022-04-19T23:25:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/404.html</loc>
-<lastmod>2022-04-17T23:41:02-00:00</lastmod>
+<lastmod>2022-04-19T23:25:43-00:00</lastmod>
 <changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/pages/About.html</loc>
-<lastmod>2022-04-13T20:36:00-05:00</lastmod>
-<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 

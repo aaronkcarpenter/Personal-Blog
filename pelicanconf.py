@@ -1,5 +1,6 @@
 AUTHOR = 'Aaron K'
-SITENAME = 'Aaron Kyle'
+SITENAME = 'Mr.Kyle'
+RECENT_ARTICLES_COUNT=10
 SITEURL = ''
 
 PATH = 'content'
@@ -7,6 +8,9 @@ PATH = 'content'
 TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = 'en'
+
+# Search Functionality
+SEARCH_MODE = "output"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -43,7 +47,7 @@ RELATIVE_URLS = True
 
 # PLUGIN PATH AND PLUGINS IN USE
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'tipue_search.tipue_search']
+PLUGINS = ['sitemap', 'extract_toc', 'neighbors']
 
 MARKDOWN = {
     'extension_configs': {
@@ -56,4 +60,17 @@ MARKDOWN = {
 }
 
 THEME = 'pelican-themes/elegant'
+
+LANDING_PAGE_TITLE = "Software Development, Internet Business, and Urban Pop Culture"
+
+PROJECTS_TITLE = "Current Interests"
+
+PROJECTS = [{
+    'name': 'SPY Entry/Exit Tool',
+    'url': 'https://github.com/talha131/logpad-plus-duration#logpad--duration',
+    'description': 'Get the best entry and exit prices for SPY. Enter Trade. Profit.'
+    },
+    {'name': 'Personal Blog',
+    'url': 'http://oncrashreboot.com/pelican-elegant',
+    'description': 'I do front end development by day, but want to work in Python. This is the start'}]
 
