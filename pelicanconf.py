@@ -30,9 +30,11 @@ USE_SHORTCUT_ICONS=True
 # Blogroll
 LINKS = (('Contact Me', 'https://aaronkylec.com/'),
          ('LinkedIn', 'https://www.linkedin.com/in/aaronkcarpenter/'),
-         ('Twitter', 'https://twitter.com/_kyleaaron')),
+         ('Twitter', 'https://twitter.com/_kyleaaron'),
+         ('AngelList', 'https://angel.co/u/aaron-carpenter-4')),
 
 # Social widget
+SOCIAL_PROFILE_LABEL = u'Connect With Me'
 SOCIAL = (('github', 'https://www.github.com/aaronkcarpenter'),
           ('linkedin-square', 'https://www.linkedin.com/in/aaronkcarpenter/'),
           ('facebook','https://www.facebook.com/aaron.carpenter.77377/'),
@@ -45,9 +47,30 @@ DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404')
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
+# SEO
+SITE_DESCRIPTION = (
+    "Documenting the life and career of Entrepreneur/Software Engineer Aaron Kyle."
+)
+
 # PLUGIN PATH AND PLUGINS IN USE
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['sitemap', 'extract_toc', 'neighbors']
+PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'post_stats']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.6,
+        'indexes': 0.5,
+        'pages': 0.4
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'weekly',
+        'pages': 'monthly'
+    }
+}
+
+READING_TIME_LOWER_LIMIT = 2
 
 MARKDOWN = {
     'extension_configs': {
@@ -61,16 +84,32 @@ MARKDOWN = {
 
 THEME = 'pelican-themes/elegant'
 
-LANDING_PAGE_TITLE = "Software Development, Internet Business, and Urban Pop Culture"
+# LANDING_PAGE_TITLE = "Building Products with Code and Turning Them Into Money Makers"
+LANDING_PAGE_TITLE = "Software Development | Entrepreneurship | Personal Development"
 
-PROJECTS_TITLE = "Current Interests"
+PROJECTS_TITLE = "Current Projects & Interests"
 
 PROJECTS = [{
-    'name': 'SPY Entry/Exit Tool',
-    'url': 'https://github.com/talha131/logpad-plus-duration#logpad--duration',
+    'name': 'SPY Entry/Exit Tool and Option Chain Scraper',
+    'url': 'https://github.com/aaronkcarpenter/Automated-Option-Chain-Scraper',
     'description': 'Get the best entry and exit prices for SPY. Enter Trade. Profit.'
     },
+    {'name': 'Portfolio Page',
+    'url': 'http://www.aaronkylec.com',
+    'description': 'The go-to location for recruiters and professionals to inquire about my services.'
+    },
     {'name': 'Personal Blog',
-    'url': 'http://oncrashreboot.com/pelican-elegant',
-    'description': 'I do front end development by day, but want to work in Python. This is the start'}]
+    'url': 'http://www.aaronkyle.co',
+    'description': 'I do front end development by day, but work heavily in Python for my personal projects.This blog is the first.'
+    },
+    {'name': 'Twitter Biz Bot',
+    'url': 'https://github.com/aaronkcarpenter/Twitter-Biz-Bot',
+    'description': 'Just combining my interests in web scraping, automation and Twitter to create a full automated Twitter profile.'
+    },
+    {
+    'name': 'Aimé Leon Doré',
+    'url': 'https://app-academy-capstone-project.web.app/',
+    'description': 'One of the first projects that im still proud of.'
+    }
+    ]
 
