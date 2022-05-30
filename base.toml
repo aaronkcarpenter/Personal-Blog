@@ -1,0 +1,7 @@
+[input]
+base_directory = "pelican-themes/elegant/templates"
+url_prefix = "https://www.aaronkyle.co"
+files = [
+    {path = "base.html", title="Template File", url="www.aaronkyle.co"},
+
+]

@@ -1,0 +1,12 @@
+[input]
+base_directory = "output/articles"
+url_prefix = "https://www.aaronkyle.co"
+files = [
+    {path = "2022-interviewing.html", url = "articles/2022-interviewing.html", title = "If You Put In The Work, They Will Come"},
+    {path = "user-authentication-setup.html", url = "articles/user-authentication-setup.html", title = "Setting Up User Authentication with AWS"},
+    {path = "software-engineering-career-year-1.html", url = "articles/software-engineering-career-year-1.html", title = "Software Engineer - Year 1"},
+    {path = "my-google-interview.html", url = "articles/my-google-interview.html", title = "Studied 6 Months for Google --> Still Failed"},
+    {path = "options-scraper-project.html", url = "articles/options-scraper-project.html", title = "Built A Scraper for NASDAQ.COM and QUIT"},
+    {path = "april-ramblings.html", url = "articles/april-ramblings.html", title = "April Ramblings"},
+
+]

@@ -5,7 +5,7 @@ Modified: 2022-04-13 20:36
 Slug: first-post
 Tags: testing
 Author: Aaron Kyle
-Category: testing posts
+Category: Testing
 Summary: This is a sample blog post.
 
 

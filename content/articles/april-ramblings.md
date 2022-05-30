@@ -3,9 +3,9 @@ Date: 2022-04-15 01:00
 Status: published
 Modified: 2022-04-15 01:00
 Slug: april-ramblings
-Tags: random life
+Tags: random, life
 Author: Aaron Kyle
-Category: random life
+Category: Life
 Summary: Getting It All Off!
 
 [ TOC ]

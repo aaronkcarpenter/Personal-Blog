@@ -51,7 +51,7 @@ help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
-	@echo '   make s3_send                       upload the website via S3         '
+	@echo '   make s3_send                         upload the website via S3         '
 	@echo '   make s3_upload                       upload the website via S3         '
 	@echo '   make html                           (re)generate the web site          '
 	@echo '   make clean                          remove the generated files         '

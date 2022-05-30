@@ -1,5 +1,5 @@
 AUTHOR = 'Aaron K'
-SITENAME = 'Mr.Kyle'
+SITENAME = 'aaronkyle'
 RECENT_ARTICLES_COUNT=10
 SITEURL = ''
 
@@ -11,6 +11,8 @@ DEFAULT_LANG = 'en'
 
 # Search Functionality
 SEARCH_MODE = "output"
+SEARCH_HTML_SELECTOR = "main"
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -49,7 +51,7 @@ RELATIVE_URLS = True
 
 # SEO
 SITE_DESCRIPTION = (
-    "Documenting the life and career of Entrepreneur/Software Engineer Aaron Kyle."
+    "Documenting the life and career of Entrepreneur & Software Engineer Aaron Kyle."
 )
 
 # PLUGIN PATH AND PLUGINS IN USE
@@ -90,13 +92,17 @@ LANDING_PAGE_TITLE = "Software Development | Entrepreneurship | Personal Develop
 PROJECTS_TITLE = "Current Projects & Interests"
 
 PROJECTS = [{
-    'name': 'SPY Entry/Exit Tool and Option Chain Scraper',
+    'name': 'Entry/Exit Tool and Option Chain Scraper',
     'url': 'https://github.com/aaronkcarpenter/Automated-Option-Chain-Scraper',
     'description': 'Get the best entry and exit prices for SPY. Enter Trade. Profit.'
     },
+    {'name': 'Analytics Site',
+    'url': 'https://master.dhqg8jsbkxhqu.amplifyapp.com/',
+    'description': 'I Built A Site Based Off Of A Few Endpoints Found On The Web.'
+    },
     {'name': 'Portfolio Page',
     'url': 'http://www.aaronkylec.com',
-    'description': 'The go-to location for recruiters and professionals to inquire about my services.'
+    'description': 'Any Professional Inquiries Can Be Answered Here.'
     },
     {'name': 'Personal Blog',
     'url': 'http://www.aaronkyle.co',
@@ -105,6 +111,10 @@ PROJECTS = [{
     {'name': 'Twitter Biz Bot',
     'url': 'https://github.com/aaronkcarpenter/Twitter-Biz-Bot',
     'description': 'Just combining my interests in web scraping, automation and Twitter to create a full automated Twitter profile.'
+    },
+    {'name': 'Bentley Bot',
+    'url': 'https://github.com/aaronkcarpenter/Twitter-Biz-Bot',
+    'description': 'Bentley auto-follows and auto-tweets randomly throughout the day. Built with Python, AWS Lambda Functions, and the Google Sheets API'
     },
     {
     'name': 'Aimé Leon Doré',

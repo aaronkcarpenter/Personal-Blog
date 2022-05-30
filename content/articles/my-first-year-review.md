@@ -1,10 +1,10 @@
 Title: Software Engineer - Year 1
 Date: 2022-04-19 11:52
 Status: published
-Slug: software-engineering-career
-Tags: tech softwaredevelopment
+Slug: software-engineering-career-year-1
+Tags: tech, software development, career
 Author: Aaron Kyle
-Category: softwaredevelopment
+Category: Career
 Summary: My only goal with the first role was to get in. I did it. How do i feel about my first role?
 
 
